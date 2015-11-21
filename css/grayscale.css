@@ -92,6 +92,14 @@ a:focus {
     color: #fff;
 }
 
+
+/*
+ fix zoom issue
+ */
+.navbar {
+    position: absolute;
+}
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -174,6 +182,8 @@ a:focus {
     width: 370px;
     height: 208px;
 }
+
+
 
 @media(min-width:768px) {
     .intro {
