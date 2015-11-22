@@ -8,8 +8,28 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+
+        //TO FIX STYLING ISSUE FOR NAV BAR
+        if ($(window).width() > 768) {
+            $('#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li:nth-child(2)').removeClass("active");
+        }
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+////TO FIX STYLING ISSUE FOR NAV BAR
+$(document).ready(function(){
+    //$('#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li:nth-child(2)').removeClass("active");
+
+    if ($(window).width() > 768) {
+        var aboutListItem = $('#page-top > nav > div > div.collapse.navbar-collapse.navbar-right.navbar-main-collapse > ul > li:nth-child(2)');
+        window.interval = setInterval(function() {
+        if (aboutListItem.hasClass('active')) {
+            aboutListItem.removeClass('active');
+            clearInterval(interval);
+        }
+    }, 50);
     }
 });
 
