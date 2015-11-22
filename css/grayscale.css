@@ -36,6 +36,8 @@ p {
     line-height: 1.5;
 }
 
+
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -145,6 +147,10 @@ a:focus {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
+    }
+
+    footer p {
+        font-size: 7px;
     }
 }
 
@@ -370,6 +376,7 @@ footer {
 
 footer p {
     margin: 0;
+    font-size: 7px;
 }
 
 ::-moz-selection {
