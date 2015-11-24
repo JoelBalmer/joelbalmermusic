@@ -186,8 +186,14 @@ a:focus {
 }
 
 #main_video {
-    width: 370px;
-    height: 208px;
+    width: 85%;
+}
+
+
+@media(max-width:350px) {
+    .intro .intro-body .brand-heading {
+        font-size: 30px;
+    }
 }
 
 
