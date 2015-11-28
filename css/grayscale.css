@@ -146,6 +146,7 @@ a:focus {
 
 .carousel-caption {
     padding: 0px;
+    color: #000000;
 }
 
 .carousel-indicators {
@@ -170,6 +171,11 @@ a:focus {
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .carousel-caption {
+        padding: 0px;
+        color: #ffffff;
     }
 
     .navbar-custom.top-nav-collapse {
