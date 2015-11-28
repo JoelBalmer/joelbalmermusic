@@ -133,6 +133,34 @@ a:focus {
     background-color: transparent;
 }
 
+/* Carousel */
+#myCarousel > a.carousel-control {
+    background-image: none;
+    opacity: 1.0;
+    width: 9%;
+}
+
+#myCarousel > div > div.item > div {
+    position: static;
+}
+
+.carousel-caption {
+    padding: 0px;
+}
+
+.carousel-indicators {
+    position:static;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.carousel-indicators > li, .carousel-indicators > li.active {
+    width: 18px;
+    height: 18px;
+}
+/* Carousel end */
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -153,6 +181,8 @@ a:focus {
     footer p {
         font-size: 7px;
     }
+
+    
 }
 
 .intro {
@@ -178,6 +208,8 @@ a:focus {
 .intro .intro-body .brand-heading {
     color: #000000;
     font-size: 40px;
+    padding-bottom: 0px;
+    margin: 0 0 10px;
 }
 
 .intro .intro-body .intro-text {
@@ -185,7 +217,7 @@ a:focus {
     font-size: 18px;
 }
 
-#main_video {
+.main_video {
     width: 370px;
     height: 208px;
 }
@@ -194,12 +226,16 @@ a:focus {
 @media(max-width:450px) {
     .intro .intro-body .brand-heading {
         font-size: 30px;
+        padding-bottom: 0px;
+        margin: 0 0 10px;
     }
 
-    #main_video {
+    .main_video {
         width: 85%;
         height: 100%;
     }
+
+    
 }
 
 
@@ -212,14 +248,15 @@ a:focus {
     .intro .intro-body .brand-heading {
         font-size: 70px;
         color: #ffffff;
-        
+        padding-bottom: 0px;
+        margin: 0 0 10px;
     }
 
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
 
-    #main_video {
+    .main_video {
         width: 500px;
         height: 281px;
     }
