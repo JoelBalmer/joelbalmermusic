@@ -89,6 +89,7 @@ window.onStateChange = function(playerid, state) {
 //for each of the above three states, make a custom event API call to Optimizely
 window.onPause = function(id) {
     console.log('YouTube player \'' +id +'\': pause');
+    $('#achievementsCarousel').carousel('cycle');
 };
  
 window.onFinish = function(id) {
@@ -97,6 +98,7 @@ window.onFinish = function(id) {
  
 window.onPlay = function(id) {
     console.log('YouTube player \'' +id +'\': play');
+    $('#achievementsCarousel').carousel('pause');
 };
 
 //YOUTUBE APIS END
