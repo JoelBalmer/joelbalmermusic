@@ -90,6 +90,11 @@ window.onStateChange = function(playerid, state) {
 window.onPause = function(id) {
     console.log('YouTube player \'' +id +'\': pause');
     $('#achievementsCarousel').carousel('cycle');
+    
+    // ensures the optimizely object is defined globally using
+    window['optimizely'] = window['optimizely'] || [];
+    // sends a tracking call to Optimizely for the given event name. 
+    window.optimizely.push(["trackEvent", "Youtube paused"]);
 };
  
 window.onFinish = function(id) {
@@ -99,6 +104,10 @@ window.onFinish = function(id) {
 window.onPlay = function(id) {
     console.log('YouTube player \'' +id +'\': play');
     $('#achievementsCarousel').carousel('pause');
+    // ensures the optimizely object is defined globally using
+    window['optimizely'] = window['optimizely'] || [];
+    // sends a tracking call to Optimizely for the given event name. 
+    window.optimizely.push(["trackEvent", "Youtube played"]);
 };
 
 //YOUTUBE APIS END
@@ -129,11 +138,21 @@ $(function() {
         status.text('paused');
         console.log('vimeo paused!');
         $('#achievementsCarousel').carousel('cycle');
+
+        // ensures the optimizely object is defined globally using
+        window['optimizely'] = window['optimizely'] || [];
+        // sends a tracking call to Optimizely for the given event name. 
+        window.optimizely.push(["trackEvent", "Vimeo paused"]);
     }
 
     function onPlay(id) {
         status.text('vimeo played!');
         $('#achievementsCarousel').carousel('pause');
+
+        // ensures the optimizely object is defined globally using
+        window['optimizely'] = window['optimizely'] || [];
+        // sends a tracking call to Optimizely for the given event name. 
+        window.optimizely.push(["trackEvent", "Vimeo played"]);
     }
 
     function onFinish(id) {
