@@ -126,7 +126,13 @@ $(function() {
 
     function onPause(id) {
         status.text('paused');
-        console.log('paused' + status.text);
+        console.log('vimeo paused!');
+        $('#achievementsCarousel').carousel('cycle');
+    }
+
+    function onPlay(id) {
+        status.text('vimeo played!');
+        $('#achievementsCarousel').carousel('pause');
     }
 
     function onFinish(id) {
