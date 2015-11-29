@@ -134,13 +134,13 @@ a:focus {
 }
 
 /* Carousel */
-#myCarousel > a.carousel-control {
+#achievementsCarousel > a.carousel-control {
     background-image: none;
     opacity: 1.0;
     width: 9%;
 }
 
-#myCarousel > div > div.item > div {
+#achievementsCarousel > div > div.item > div {
     position: static;
 }
 

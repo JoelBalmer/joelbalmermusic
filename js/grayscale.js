@@ -18,20 +18,89 @@ $(window).scroll(function() {
     }
 });
 
-////TO FIX STYLING ISSUE FOR NAV BAR
 $(document).ready(function(){
-    //$('#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li:nth-child(2)').removeClass("active");
+    window.console.log('hello');
 
+    //TO FIX STYLING ISSUE FOR NAV BAR
     if ($(window).width() > 768) {
         var aboutListItem = $('#page-top > nav > div > div.collapse.navbar-collapse.navbar-right.navbar-main-collapse > ul > li:nth-child(2)');
         window.interval = setInterval(function() {
-        if (aboutListItem.hasClass('active')) {
-            aboutListItem.removeClass('active');
-            clearInterval(interval);
-        }
-    }, 50);
+            if (aboutListItem.hasClass('active')) {
+                aboutListItem.removeClass('active');
+                clearInterval(interval);
+            }
+        }, 50);
     }
+
+    //INITIAL CAROUSEL SETUP
+    $('#achievementsCarousel').carousel({
+        interval: 4500,
+        pause: "hover"
+    });
+
 });
+
+
+//YOUTUBE APIS
+
+//this is a boilerplate set of calls to append a new script to your head tag
+var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "//www.youtube.com/iframe_api";
+head.appendChild(script);
+/**
+* iFrame API (for iframe videos)
+* onYouTubeIframeAPIReady is called for each player when it is ready
+*/
+
+window.onYouTubeIframeAPIReady = function(){
+    console.log('youtube iframe ready');
+    $('.main_video').each(function() {
+        var iframe = optimizely.$(this);
+        console.log('player is: ' + iframe[0]);
+
+        // get the player(s)
+        var player = new YT.Player(iframe[0], {
+            events: {
+                'onReady': function(e){
+                    console.log('YouTube player \'' +iframe.attr('id') +'\': ready');
+                    e.target._donecheck=true;
+                },
+                'onStateChange': function(e){
+                    onStateChange(iframe.attr('id'), e);
+                }
+            }
+        });
+    });
+};
+
+//execute the API calls for play, pause, and finish
+window.onStateChange = function(playerid, state) {
+    if(state.data === 0) { 
+        onFinish(playerid);
+    } else if(state.data === 1) { 
+        onPlay(playerid);
+    } else if(state.data === 2) { 
+        onPause(playerid);
+    }
+};
+
+//for each of the above three states, make a custom event API call to Optimizely
+window.onPause = function(id) {
+    console.log('YouTube player \'' +id +'\': pause');
+};
+ 
+window.onFinish = function(id) {
+    console.log('YouTube player \'' +id +'\': finish');
+};
+ 
+window.onPlay = function(id) {
+    console.log('YouTube player \'' +id +'\': play');
+};
+
+//YOUTUBE APIS END
+
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
