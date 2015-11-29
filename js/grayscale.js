@@ -115,6 +115,7 @@ $(function() {
         status.text('ready');
         
         player.addEvent('pause', onPause);
+        player.addEvent('pause', onPlay);
         player.addEvent('finish', onFinish);
         player.addEvent('playProgress', onPlayProgress);
     });
