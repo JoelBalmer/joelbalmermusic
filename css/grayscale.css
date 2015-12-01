@@ -77,6 +77,12 @@
     }    
 }
 
+@media(max-width:768px) {
+    .navbar-brand {
+        padding: 15px 5px;
+    }
+}
+
 
 /*
  * Adding a new font face end
