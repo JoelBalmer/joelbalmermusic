@@ -256,6 +256,11 @@ a:focus {
     color: #fff;
 }
 
+.social-links {
+    color: #fff;
+    text-align: center;   
+}
+
 /*may not work*/
 #achievements_item .active a {
     background-color: transparent;
