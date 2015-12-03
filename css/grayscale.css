@@ -22,7 +22,18 @@
            url('./fontello/font/fontello.svg?36554679#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
-    }
+}
+
+@font-face {
+      font-family: 'fontello_achievement_logos';
+      src: url('./fontello_achievement_logos/font/fontello.eot?97386581');
+      src: url('./fontello_achievement_logos/font/fontello.eot?97386581#iefix') format('embedded-opentype'),
+           url('./fontello_achievement_logos/font/fontello.woff?97386581') format('woff'),
+           url('./fontello_achievement_logos/font/fontello.ttf?97386581') format('truetype'),
+           url('./fontello_achievement_logos/font/fontello.svg?97386581#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
      
      
 .demo-icon
