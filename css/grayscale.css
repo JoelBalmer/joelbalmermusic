@@ -458,6 +458,28 @@ a:focus {
     background-color: #42dca3;
 }
 
+
+/*
+ * fix achievements logo styling / spacing
+ * (more code in media queries)
+ */
+
+.navbar-header > a:nth-child(5) {
+    padding-left: 25px;
+    padding-right: 27px;
+}
+
+.navbar-header > a:nth-child(7) {
+    padding-left: 35px;
+}
+
+.icon-coca-cola_text {
+    font-size: 22px;
+}
+
+
+
+
 ul.banner-social-buttons {
     margin-top: 0;
 }
@@ -486,6 +508,23 @@ footer p {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .logo-icon {
+        font-size: 18px;
+    }
+
+    .navbar-header > a:nth-child(5) {
+        padding-left: 13px;
+        padding-right: 15px;
+    }
+
+    .navbar-header > a:nth-child(7) {
+        padding-left: 15px;
+    }
+
+    .icon-coca-cola_text {
+        font-size: 15px;
     }
 }
 
