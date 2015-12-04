@@ -81,7 +81,7 @@
   font-weight: normal;
   speak: none;
 
-  font-size: 29px;
+  font-size: 50px;
  
   display: inline-block;
   text-decoration: inherit;
@@ -258,7 +258,7 @@ a:focus {
 
 .social-links {
     color: #fff;
-    margin: auto;   
+    margin: auto;
 }
 
 /*may not work*/
