@@ -526,6 +526,11 @@ footer p {
     .icon-coca-cola_text {
         font-size: 15px;
     }
+
+
+    .navbar-toggle > i:hover {
+        color: #fff;
+    }
 }
 
 
