@@ -286,6 +286,29 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    
+    <!-- OPTIMIZELY TEST -->
+    <script type="text/javascript">
+        function optimizelyGoal (customEvent, revenueValue){
+          console.log('Sending goal');
+          var iframe = document.createElement('iframe');
+          iframe.style.display = "none";
+          var revenueValueDefault = revenueValue || '0';
+          iframe.src = 'optimizelygoal://goal?name=' + customEvent + '&revenue=' + revenueValueDefault;
+          document.body.appendChild(iframe);
+        }
+
+        /* 
+        USAGE: 
+        - revenue value is optional
+        - however, you always
+        need to supply a custom
+        event name, even if you
+        only want to send a revenue
+        value, like so:
+        */
+        optimizelyGoal('transactions', '900');
+    </script>
 
 </body>
 
