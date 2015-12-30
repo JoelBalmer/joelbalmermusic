@@ -34,6 +34,8 @@
       font-weight: normal;
       font-style: normal;
 }
+
+
      
 .logo-icon
 {
@@ -259,6 +261,7 @@ a:focus {
 .social-links {
     color: #fff;
     margin: auto;
+    target: blank;
 }
 
 /*may not work*/
@@ -327,6 +330,24 @@ a:focus {
 .intro .intro-body .intro-text {
     color: #000000;
     font-size: 18px;
+}
+
+.mofilm_iFrame {
+    /*width: 800px; height: 520px; border: 1px solid black;*/
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+}
+
+.mofilm_iFrame_wrap {
+    /*width: 600px; 
+    height: 390px;
+    padding: 0;*/
+    overflow: visible;
 }
 
 .main_video {
@@ -476,8 +497,6 @@ a:focus {
 .icon-coca-cola_text {
     font-size: 22px;
 }
-
-
 
 
 ul.banner-social-buttons {
@@ -644,3 +663,5 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+
+
