@@ -37,6 +37,7 @@ $(document).ready(function(){
         interval: 4500,
         pause: "hover"
     });
+    console.log('hello!!!');
 
 });
 
