@@ -320,12 +320,7 @@ a:focus {
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
-    color: #000000;
-    font-size: 40px;
-    padding-bottom: 0px;
-    margin: 0 0 10px;
-}
+
 
 .intro .intro-body .intro-text {
     color: #000000;
@@ -552,10 +547,16 @@ footer p {
     }
 }
 
+.intro .intro-body .brand-heading {
+    color: #000000;
+    font-size: 28px;
+    padding-bottom: 0px;
+    margin: 0 0 10px;
+}
 
 @media(max-width:450px) {
     .intro .intro-body .brand-heading {
-        font-size: 30px;
+        font-size: 23px;
         padding-bottom: 0px;
         margin: 0 0 10px;
     }
