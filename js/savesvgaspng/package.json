@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "save-svg-as-png",
+      "/Users/Joel/Documents/node"
+    ]
+  ],
+  "_from": "save-svg-as-png@latest",
+  "_id": "save-svg-as-png@1.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/save-svg-as-png",
+  "_npmUser": {
+    "email": "eric@exupero.org",
+    "name": "exupero"
+  },
+  "_npmVersion": "1.4.28",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "save-svg-as-png",
+    "raw": "save-svg-as-png",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/save-svg-as-png/-/save-svg-as-png-1.0.2.tgz",
+  "_shasum": "15e1dfb1992c448905b900a00d3e246d749c177d",
+  "_shrinkwrap": null,
+  "_spec": "save-svg-as-png",
+  "_where": "/Users/Joel/Documents/node",
+  "author": {
+    "name": "Eric Shull"
+  },
+  "bugs": {
+    "url": "https://github.com/exupero/saveSvgAsPng/issues"
+  },
+  "dependencies": {},
+  "description": "Convert a browser SVG to PNG or dataUri",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "15e1dfb1992c448905b900a00d3e246d749c177d",
+    "tarball": "http://registry.npmjs.org/save-svg-as-png/-/save-svg-as-png-1.0.2.tgz"
+  },
+  "gitHead": "cfad4309fb73c17ba5c659b3df49c9304f846e53",
+  "homepage": "https://github.com/exupero/saveSvgAsPng",
+  "keywords": [
+    "graphics",
+    "images",
+    "png",
+    "svg"
+  ],
+  "license": "MIT",
+  "main": "saveSvgAsPng.js",
+  "maintainers": [
+    {
+      "name": "exupero",
+      "email": "eric@exupero.org"
+    }
+  ],
+  "name": "save-svg-as-png",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exupero/saveSvgAsPng.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
