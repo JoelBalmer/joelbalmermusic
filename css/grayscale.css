@@ -709,3 +709,7 @@ body {
     bottom: 0;
     position: absolute;
 }
+
+.navbar-fixed-bottom {
+    border-top: 1px solid rgba(255,255,255,.3);
+}
