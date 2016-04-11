@@ -714,3 +714,31 @@ body {
     border-top: 1px solid rgba(255,255,255,.3);
 }
 
+#brand {
+    color: #ffffff;
+}
+
+#brand:hover {
+    color: #2AA7A7;
+}
+
+.modal.custom .modal-dialog {
+    width:80%;
+    margin:0 auto;
+    margin-top: 20%;
+    
+    /*add what you want here*/
+}
+
+.modal-header {
+    background-color: black;
+    border-bottom: none;
+ }
+
+.modal-header > button {
+    color: white;
+}
+
+.modal-body {
+    background-color: black;
+}
