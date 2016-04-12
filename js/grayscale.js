@@ -39,6 +39,10 @@ $(document).ready(function(){
     });
     console.log('hello!!!');
 
+    $('#showreelModal').on('hidden.bs.modal', function () {
+        //pause showreel video
+        $f($('#showreelVideo')[0]).api('pause');
+    });
 });
 
 
@@ -118,6 +122,7 @@ window.onPlay = function(id) {
 $(function() {
     var iframe = $('#hanginVideo')[0];
     var player = $f(iframe);
+    var playerShowreel = $f($('#showreelVideo')[0]);
     var status = $('.status');
 
     // When the player is ready, add listeners for pause, finish, and playProgress
@@ -128,6 +133,9 @@ $(function() {
         player.addEvent('play', onPlay);
         player.addEvent('finish', onFinish);
         player.addEvent('playProgress', onPlayProgress);
+
+        //SHOW SHOWREEL after severl seconds
+        $('#showreelModal').modal('show');
     });
 
     // Call the API when a button is pressed

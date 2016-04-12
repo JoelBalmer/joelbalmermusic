@@ -327,6 +327,7 @@ a:hover {
 .carousel-indicators > li, .carousel-indicators > li.active {
     width: 18px;
     height: 18px;
+
 }
 /* Carousel end */
 
@@ -703,4 +704,66 @@ body {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+.soundcloud-footer {
+    bottom: 0;
+    position: absolute;
+}
+
+.navbar-fixed-bottom {
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+
+#brand {
+    color: #ffffff;
+}
+
+#brand:hover {
+    color: #2AA7A7;
+}
+
+.modal.custom .modal-dialog {
+    width:80%;
+    margin:0 auto;
+    margin-top: 20%;
+    
+    /*add what you want here*/
+}
+
+@media(min-width:767px) {
+    .modal.custom .modal-dialog {
+        margin-top: 10%;
+    }
+}
+
+.modal-header {
+    background-color: black;
+    border-bottom: none;
+ }
+
+.modal-header > button {
+    color: white;
+    font-size: 27px;
+}
+
+.modal-body {
+    background-color: black;
+}
+
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+#showreelOuter {
+    width: 100%;
+}
+
+#showreelInner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#showreelVideo {
+    width: 100%;
 }
