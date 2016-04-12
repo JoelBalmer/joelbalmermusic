@@ -730,6 +730,12 @@ body {
     /*add what you want here*/
 }
 
+@media(min-width:767px) {
+    .modal.custom .modal-dialog {
+        margin-top: 10%;
+    }
+}
+
 .modal-header {
     background-color: black;
     border-bottom: none;
@@ -737,8 +743,26 @@ body {
 
 .modal-header > button {
     color: white;
+    font-size: 27px;
 }
 
 .modal-body {
     background-color: black;
+}
+
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+#showreelOuter {
+    width: 100%;
+}
+
+#showreelInner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#showreelVideo {
+    width: 100%;
 }
