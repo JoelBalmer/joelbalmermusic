@@ -724,16 +724,24 @@ body {
 }
 
 .modal.custom .modal-dialog {
-    width:80%;
+    width:90%;
     margin:0 auto;
     margin-top: 20%;
     
     /*add what you want here*/
 }
 
-@media(min-width:767px) {
+@media(min-width:600px) {
     .modal.custom .modal-dialog {
         margin-top: 10%;
+        width:80%;
+    }
+    
+}
+
+@media(min-width:767px) {
+    .modal.custom .modal-dialog {
+        width:70%;
     }
 }
 
