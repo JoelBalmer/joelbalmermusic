@@ -19,7 +19,17 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
-    window.console.log('hello');
+    window.console.log('Doc ready');
+    
+    //HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
+    $('#showreelModal').on('shown.bs.modal', function() {
+        $('#showreelButton').addClass('buttonPushed');
+        console.log('button pressed!');
+    });
+
+    // $('.modal-content').on('shown', function() {
+    //     console.log('button pressed2 !');
+    // })
 
     //TO FIX STYLING ISSUE FOR NAV BAR
     if ($(window).width() > 768) {
@@ -40,8 +50,11 @@ $(document).ready(function(){
     console.log('hello!!!');
 
     $('#showreelModal').on('hidden.bs.modal', function () {
-        //pause showreel video
+        //PAUSE SHOWREEL VIDEO
         $f($('#showreelVideo')[0]).api('pause');
+
+        //DE-HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
+        $('#showreelButton').removeClass('buttonPushed');
     });
 });
 

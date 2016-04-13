@@ -706,29 +706,37 @@ body {
     transition: all .2s ease-in-out;
 }
 
+/*
 .soundcloud-footer {
     bottom: 0;
     position: absolute;
 }
+*/
 
 .navbar-fixed-bottom {
-    border-top: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(19,17,17,1.0);
+    z-index: 2000;
 }
 
-#brand {
+#showreelButton {
     color: #ffffff;
 }
 
-#brand:hover {
+#showreelButton.buttonPushed {
+    color: #2AA7A7;
+    text-decoration: underline;
+}
+
+
+#showreelButton:hover {
     color: #2AA7A7;
 }
+
 
 .modal.custom .modal-dialog {
     width:90%;
     margin:0 auto;
     margin-top: 20%;
-    
-    /*add what you want here*/
 }
 
 @media(min-width:600px) {
@@ -761,6 +769,11 @@ body {
 
 .modal-backdrop.in {
     opacity: 0.85;
+}
+
+.modal-content {
+    border-radius: 1px;
+    border-color: #131111;
 }
 
 #showreelOuter {
