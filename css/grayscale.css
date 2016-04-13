@@ -739,9 +739,9 @@ body {
     
 }
 
-@media(min-width:767px) {
+@media(min-width:1024px) {
     .modal.custom .modal-dialog {
-        width:70%;
+        width:60%;
     }
 }
 
@@ -770,6 +770,12 @@ body {
 #showreelInner {
     width: 80%;
     margin: 0 auto;
+}
+
+@media(max-width: 750px) {
+    #showreelInner {
+        width: 90%;
+    }
 }
 
 #showreelVideo {
