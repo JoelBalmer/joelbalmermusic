@@ -801,6 +801,7 @@ body {
     margin-top: 7px;
     background: #2AA7A7;
     box-shadow: 0 4px #ffffff;
+    font-weight: bold;
 }
 
 .btn-sm:hover {

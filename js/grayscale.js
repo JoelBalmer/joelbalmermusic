@@ -20,7 +20,6 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-    window.console.log('Doc ready');
     
     //HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
     $('#showreelModal').on('shown.bs.modal', function() {
@@ -55,15 +54,21 @@ $(document).ready(function(){
         $f($('#showreelVideo')[0]).api('pause');
 
         //DE-HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
-        $('#btn-showreel').removeClass('btn-sm-pressed');
+        //$('#btn-showreel').removeClass('btn-sm-pressed');
         //$('#btn-showreel').toggleClass('btn-sm-pressed');
     });
+
 });
 
 
 //FUNCTION FOR SHOWREEL PRESSED
 function btn_sm_pressed() {
     $('#btn-showreel').toggleClass('btn-sm-pressed');
+}
+
+//MODAL CLOSE BUTTON
+function closedButtonPressed() {
+    $('#btn-showreel').removeClass('btn-sm-pressed');
 }
 
 
