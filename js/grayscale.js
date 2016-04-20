@@ -55,7 +55,9 @@ $(document).ready(function(){
 
         //DE-HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
         //$('#btn-showreel').removeClass('btn-sm-pressed');
-        //$('#btn-showreel').toggleClass('btn-sm-pressed');
+        
+        //IF CLOSE BUTTON IS NOT PRESSED
+        $('#btn-showreel').removeClass('btn-sm-pressed');
     });
 
 });
