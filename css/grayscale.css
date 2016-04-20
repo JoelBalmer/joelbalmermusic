@@ -495,17 +495,17 @@ a:hover {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #2AA7A7;
+    color: #2AA7A7;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #2AA7A7;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #2AA7A7;
 }
 
 
@@ -795,3 +795,30 @@ body {
 #showreelVideo {
     width: 100%;
 }
+
+.btn-sm {
+    color: #000000;
+    margin-top: 7px;
+    background: #2AA7A7;
+    box-shadow: 0 4px #ffffff;
+}
+
+.btn-sm:hover {
+    background: #2AA7A7;
+}
+
+.btn-sm:active {
+    box-shadow: 0 2px #ffffff;
+    margin-top: 9px;
+    /* transform: translateY(4px); */
+}
+
+
+.btn-sm-pressed {
+    box-shadow: 0 2px #ffffff;
+    margin-top: 9px;
+    /* transform: translateY(4px); */
+}
+
+/* transform: translateY(4px); */
+

@@ -18,13 +18,14 @@ $(window).scroll(function() {
     }
 });
 
+
 $(document).ready(function(){
     window.console.log('Doc ready');
     
     //HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
     $('#showreelModal').on('shown.bs.modal', function() {
         $('#showreelButton').addClass('buttonPushed');
-        console.log('button pressed!');
+        
     });
 
     // $('.modal-content').on('shown', function() {
@@ -54,9 +55,16 @@ $(document).ready(function(){
         $f($('#showreelVideo')[0]).api('pause');
 
         //DE-HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
-        $('#showreelButton').removeClass('buttonPushed');
+        $('#btn-showreel').removeClass('btn-sm-pressed');
+        //$('#btn-showreel').toggleClass('btn-sm-pressed');
     });
 });
+
+
+//FUNCTION FOR SHOWREEL PRESSED
+function btn_sm_pressed() {
+    $('#btn-showreel').toggleClass('btn-sm-pressed');
+}
 
 
 //YOUTUBE APIS
@@ -148,7 +156,8 @@ $(function() {
         player.addEvent('playProgress', onPlayProgress);
 
         //SHOW SHOWREEL after severl seconds
-        $('#showreelModal').modal('show');
+        //$('#showreelModal').modal('show');
+        $('#btn-showreel').click();
     });
 
     // Call the API when a button is pressed
