@@ -314,7 +314,7 @@ a:hover {
 
 .carousel-caption {
     padding: 0px;
-    color: #000000;
+    /* color: #000000; */
 }
 
 .carousel-indicators {
@@ -340,7 +340,8 @@ a:hover {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/divider.jpg) no-repeat top center scroll;
+    /* background: url(../img/divider.jpg) no-repeat top center scroll; */
+    background: url(../img/background_smile.jpg) no-repeat center left scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -582,7 +583,7 @@ footer p {
 }
 
 .intro .intro-body .brand-heading {
-    color: #000000;
+    /* color: #000000; */
     font-size: 28px;
     padding-bottom: 0px;
     margin: 0 0 10px;
