@@ -504,7 +504,7 @@ a:hover {
 .btn-default:focus {
     border: 1px solid #2AA7A7;
     outline: 0;
-    color: #000;
+    color: #ffffff;
     background-color: #2AA7A7;
 }
 
@@ -797,7 +797,7 @@ body {
 }
 
 .btn-sm {
-    color: #000000;
+    color: #ffffff;
     margin-top: 7px;
     background: #2AA7A7;
     box-shadow: 0px 4px #ffffff;
@@ -807,6 +807,7 @@ body {
 
 .btn-sm:hover {
     background: #2AA7A7;
+    color: #ffffff;
 }
 
 .btn-sm:active {
