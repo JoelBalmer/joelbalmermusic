@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+var fadeOverlay;
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -47,7 +49,7 @@ $(document).ready(function(){
         interval: 4500,
         pause: "hover"
     });
-    console.log('hello!!!');
+    
 
     $('#showreelModal').on('hidden.bs.modal', function () {
         //PAUSE SHOWREEL VIDEO
@@ -60,6 +62,15 @@ $(document).ready(function(){
         $('#btn-showreel').removeClass('btn-sm-pressed');
     });
 
+
+    //TRY AND CATCH BACKDROP CLICKS
+    $('#showreelModal').click(function (e) {
+        fadeOverlay = e.target.id;
+        if (fadeOverlay === 'showreelModal') {
+            console.log('modal fade clicked!');
+            $('#btn-showreel').removeClass('btn-sm-pressed')
+        }
+    });
 });
 
 
