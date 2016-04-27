@@ -832,7 +832,7 @@ body {
 
 .btn-sm-pressed {
     margin-top: 8px;
-    box-shadow: 0 5px #6D6D6D;
+    box-shadow: 0 5px #444343;
     /* transform: translateY(2px); */
     
 }
