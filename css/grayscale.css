@@ -800,9 +800,15 @@ body {
     color: #ffffff;
     margin-top: 7px;
     background: #2AA7A7;
-    box-shadow: 0px 4px #ffffff;
+    box-shadow: 0px 6px #6D6D6D;
     font-weight: bold;
-    
+    border-radius: 6px;
+
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
 }
 
 .btn-sm:hover {
@@ -810,14 +816,24 @@ body {
     color: #ffffff;
 }
 
+
 .btn-sm:active {
-    box-shadow: 0px 2px #ffffff;
+    margin-top: 9px;
+    box-shadow: 0 4px #444343;
+    /* transform: translateY(2px); */
+    
+    outline: 0;
+}
+
+.btn-sm:focus {
+    outline:none !important;
 }
 
 
 .btn-sm-pressed {
-    box-shadow: 0 2px #ffffff;
+    margin-top: 8px;
+    box-shadow: 0 5px #444343;
     /* transform: translateY(2px); */
-    margin-top: 9px;
+    
 }
 
