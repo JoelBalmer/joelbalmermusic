@@ -67,8 +67,16 @@ $(document).ready(function(){
     $('#showreelModal').click(function (e) {
         fadeOverlay = e.target.id;
         if (fadeOverlay === 'showreelModal') {
-            console.log('modal fade clicked!');
+            console.log('showreel modal fade clicked!');
             $('#btn-showreel').removeClass('btn-sm-pressed')
+        }
+    });
+
+    $('#soundcloudModal').click(function (e) {
+        fadeOverlay = e.target.id;
+        if (fadeOverlay === 'soundcloudModal') {
+            console.log('soundcloud modal fade clicked!');
+            $('#btn-soundcloud').removeClass('btn-sm-pressed')
         }
     });
 });
@@ -84,7 +92,7 @@ function btn_sm_pressed_soundcloud() {
 }
 
 //MODAL CLOSE BUTTON
-function closedButtonPressedShowreel() {
+function closedButtonPressed() {
     $('#btn-showreel').removeClass('btn-sm-pressed');
     $('#btn-soundcloud').removeClass('btn-sm-pressed');
 }
