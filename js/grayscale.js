@@ -75,13 +75,18 @@ $(document).ready(function(){
 
 
 //FUNCTION FOR SHOWREEL PRESSED
-function btn_sm_pressed() {
+function btn_sm_pressed_showreel() {
     $('#btn-showreel').toggleClass('btn-sm-pressed');
 }
 
+function btn_sm_pressed_soundcloud() {
+    $('#btn-soundcloud').toggleClass('btn-sm-pressed');
+}
+
 //MODAL CLOSE BUTTON
-function closedButtonPressed() {
+function closedButtonPressedShowreel() {
     $('#btn-showreel').removeClass('btn-sm-pressed');
+    $('#btn-soundcloud').removeClass('btn-sm-pressed');
 }
 
 
