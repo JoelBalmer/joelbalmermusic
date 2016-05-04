@@ -762,6 +762,12 @@ body {
 .modal-header > button {
     color: white;
     font-size: 27px;
+    opacity: 1;
+}
+
+.modal-header > button:hover {
+    color: white;
+    opacity: .5;
 }
 
 .modal-body {
