@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- jQuery end -->
+
+    <!-- Optimizely -->
+    <!-- joel.balmer account is 867842035 -->
+    <script src="//cdn.optimizely.com/js/3733390337.js"></script>
+    <!-- Optimizely end -->
+    
+    <!-- Froogaloop -->
+    <script type="text/javascript" src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script> 
+    <!-- Froogaloop end -->
+
+    <!-- svgaspng -->
+    <script type="text/javascript" src="js/savesvgaspng/saveSvgAsPng.js"></script> 
+    <!-- svgaspng end -->
+
+    <link rel="alternate" href="http://www.joelbalmermusic.co.uk/" hreflang="en" />
+
+    <script type="application/ld+json">
+      {
+      "@context": "http://schema.org/",
+      "@type": "Organization",
+      "url": "http://www.joelbalmermusic.co.uk",
+      "logo": "http://www.joelbalmermusic.co.uk/img/logo.png"
+      }
+    </script>
+
+    <!-- FAVICON CODE -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=nggNvPEzbR">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=nggNvPEzbR">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=nggNvPEzbR" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-194x194.png?v=nggNvPEzbR" sizes="194x194">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=nggNvPEzbR" sizes="96x96">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=nggNvPEzbR" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=nggNvPEzbR" sizes="16x16">
+    <link rel="manifest" href="/manifest.json?v=nggNvPEzbR">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=nggNvPEzbR" color="#5bbad5">
+    
+    <meta name="apple-mobile-web-app-title" content="Joel Balmer">
+    <meta name="application-name" content="Joel Balmer">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=nggNvPEzbR">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <meta name="description" content="Joel Balmer is a freelance music composer for film, television, adverts and games. Previous work includes 'MacMillan Cancer Support', where the commercial reached many UK channels including MTV, Eurosport, E4 and Channel 5. Joel's music library with MOMUSIC has had successes with such brands as Chevrolet and Cornetto, Playstation and AT&T.">
+    <meta name="author" content="Joel Balmer">
+    
+    <meta property="og:title" content="Joel Balmer Music">
+    <meta property="og:url" content="http://www.joelbalmermusic.co.uk">
+    <meta property="og:image" content="http://www.joelbalmermusic.co.uk/img/smile_card.jpg">
+    <meta property="og:description" content="Joel Balmer is a freelance music composer for film, television, adverts and games. Previous work includes 'MacMillan Cancer Support', where the commercial reached many UK channels including MTV, Eurosport, E4 and Channel 5. Joel's music library with MOMUSIC has had successes with such brands as Chevrolet and Cornetto, Playstation and AT&T.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@joelObalmer">
+    <meta name="twitter:title" content="Joel Balmer Music">
+    <meta name="twitter:description" content="Joel Balmer is a freelance music composer for film, television, adverts and games. Previous work includes 'MacMillan Cancer Support', where the commercial reached many UK channels including MTV, Eurosport, E4 and Channel 5. And as part of my music library contract with MOMUSIC I have had successes with such brands as Chevrolet and Cornetto, Playstation and AT&T.">
+    <meta name="twitter:image" content="http://www.joelbalmermusic.co.uk/img/smile_card.jpg">
+
+    <title>Joel Balmer Music</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WXJ4VF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WXJ4VF');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                
+
+                <a class="navbar-brand page-scroll" href="http://www.channel4.com/e4" target="_blank">
+                    <!--<img src="img/soundcloud.png"></img>-->
+                    <i class="logo-icon icon-e4_logo">&#xe801;</i>
+                </a>
+
+                <a class="navbar-brand page-scroll" href="http://www.channel5.com/" target="_blank">
+                    <!--<img src="img/soundcloud.png"></img>-->
+                    <i class="logo-icon icon-channel_5_logo_red">&#xe800;</i>
+                </a>
+
+                <a class="navbar-brand page-scroll" href="http://www.mtv.com/shows" target="_blank">
+                    <!--<img src="img/soundcloud.png"></img>-->
+                    <i class="logo-icon icon-mtv_logo_red">&#xe80b;</i>
+                </a>
+
+
+              
+
+
+                <a class="navbar-brand page-scroll" href="http://www.macmillan.org.uk/" target="_blank">
+                    <i class="logo-icon icon-macmillan_green">&#xe809;</i>
+                </a>   
+                
+                <a class="navbar-brand page-scroll" href="http://www.coca-colacompany.com/sustainabilityreport/we/charitable-contributions.html" target="_blank">
+                    
+                    <i class="logo-icon icon-coca-cola_text">&#xe806;</i>
+                </a>
+                
+                
+                <!--
+                 <a style="padding-left: 35px;" class="navbar-brand page-scroll" href="http://www.marchedufilm.com/en" target="blank">
+                    
+                    <i class="logo-icon icon-coca-cola_text" style="font-size: 21px;">&#xe806;</i>
+                </a>
+                -->             
+
+                
+                
+
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li id="achievements_item">
+                        <a class="page-scroll" href="#intro">Highlights</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">More work</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <!-- Achievements 
+
+    Short Films
+    •   Titles: Alco-hold-up (2010), Hangin’ (2012) Hypo-Hero (2013)
+    •   Official selections: London Independent Film Festival, Merbella International Film Festival, Hollywood Reel Independent Film Festival
+        
+    UK TV
+    •   Commercials: Go Sober for October (Macmillan Cancer charity), Myra Hindley: The Untold Story
+    •   Channels: E4, MTV, Sky Sports, Comedy Central, Channel 5 Primetime  
+    In-house / Online
+    •   Companies: Coca-cola, Cornetto, Action for Children, Akshaya Patra
+    •   Music Library: Playstation, Itau, Chevrolet, AT&T, Whisper, Friskies
+
+    -->
+
+
+    <!-- Modal -->
+
+    <div id="showreelModal" class="modal custom fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="modal-close-btn" type="button" class="close" data-dismiss="modal" onclick="closedButtonPressed()">&times;</button>
+            <h4 class="modal-title">SHOWREEL</h4>
+          </div>
+          <div class="modal-body">
+
+
+            <div id="showreelOuter">
+                <div id="showreelInner">
+                    <iframe class="main_video" id="showreelVideo" src="https://player.vimeo.com/video/163051443?api=1&player_id=showreelVideo&color=2AA7A7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                    <p></p> 
+                </div>
+            </div>
+                    
+
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="soundcloudModal" class="modal custom fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button id="modal-close-btn" type="button" class="close" data-dismiss="modal" onclick="closedButtonPressed()">&times;</button>
+            <h4 class="modal-title"><i class="demo-icon icon-soundcloud soundcloud-player-icon" style="font-size: 22px;">
+                    &#xe806;
+                </i>  PLAYER</h4>
+          </div>
+          <div class="modal-body">
+
+
+            <div id="soundcloudOuter">
+                <div id="soundcloudInner">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12499049&amp;color=2aa7a7&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                    </iframe>
+                    <p></p> 
+                </div>
+            </div>
+                    
+
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+
+    <header id="intro" class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Test Page!</h1>
+                            
+
+                        <!-- Carousel -->
+                        
+                            <div id="achievementsCarousel" class="carousel slide" data-ride="carousel">
+                                
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+
+                                  <div class="item active">
+                                    <div class="carousel-caption">
+                                        <p>UK TV - <a href="http://www.channel4.com/e4" target="_blank">E4</a> | <a href="http://www.mtv.co.uk/" target="_blank">MTV</a> | <a href="http://www.skysports.com/" target="_blank">Sky Sports</a></p>
+                                    </div>
+                                    <iframe id="macmillanCancerVideo" class="main_video" width="560" height="315" src="https://www.youtube.com/embed/enCgNWoDAOU?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                                  </div>
+
+
+                                  <div class="item">
+                                    <div class="carousel-caption">
+                                        <p>FILM - <a href="http://www.bfi.org.uk/" target="_blank">BFI</a> | <a href="https://www.idfa.nl/nl.aspx" target="_blank">IDFA</a>
+                                        </p>
+                                    </div>
+                                    <iframe id="hanginVideo" class="main_video" src="https://player.vimeo.com/video/45145788?api=1&player_id=hanginVideo&color=2AA7A7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                    </iframe> 
+                                  </div>
+
+
+                                  <div class="item">
+                                    <div class="carousel-caption">
+                                        <p>
+                                            LIBRARY - <a href="http://momusic.com/music/result?keyword=joel+balmer" target="_blank">MOFILM / MOMUSIC</a>
+                                        </p>
+                                    </div>
+                                    <iframe id="mofilmVideo" class="main_video" src="https://www.youtube.com/embed/7sUUikjgQ4A?enablejsapi=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                                    </iframe> 
+                                  </div>
+
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#achievementsCarousel" role="button" data-slide="prev">
+                                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#achievementsCarousel" role="button" data-slide="next">
+                                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                  <li data-target="#achievementsCarousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#achievementsCarousel" data-slide-to="1"></li>
+                                  <li data-target="#achievementsCarousel" data-slide-to="2"></li>
+                                </ol>
+                            </div>
+
+                        <!-- Carousel end -->
+
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                
+                <p>I have been a full-time freelance composer since January 2016.</p></p>
+
+                <p>In 2010 I composed the music for <a href="http://frankandlevyfilms.com/" target="_blank">Danny Gonzalez</a> and his short film ‘Alco-hold-up’, screened at the British Film Institute in London in 2010. This page shows a small selection of my work, and my most notable achievements since this first project.</p>
+
+                <p>I was born and bred in Brighton, England, and graduated from the University of Leeds in 2012 with a first class honours B.Sc. degree in Music, Multimedia and Electronics (MME).  While at University I discovered my penchant for composing music for media. I am also passionate about film scores, jazz, hip-hop and pop songs with good structure and writing. I now have 10 years experience with Logic Pro and a collection of instruments ranging from guitar (electric / acoustic / classical), bass (electric / upright) and percussion to clarinet, mandolin and Puerto Rican cuatro.</p>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>More work</h2>
+                <p>Please find my larger portfolio of work from the following links</p>
+                
+                <p>
+                    <a href="http://momusic.com/music/result?keyword=joel+balmer" target="_blank">MOMUSIC Library</a>
+                </p>
+
+                <div class="social">
+                    <a class="social-links" href="https://www.linkedin.com/in/joelbalmer" target="_blank">
+                        <i class="demo-icon icon-linkedin">&#xe803;</i>
+                    </a>
+
+                    <a class="social-links" href="https://vimeo.com/joelbalmer" target="_blank">
+                        <i class="demo-icon icon-vimeo">&#xe80e;</i> 
+                    </a>
+
+                    <a class="social-links" href="https://soundcloud.com/joel-balmer-music" target="_blank">
+                        <i class="demo-icon icon-soundcloud">&#xe806;</i>
+                    </a>
+                </div>
+
+                <p></p>
+
+                <p>I'm always on the look out for potential projects or collaborations, remote or on-site! Feel free to <a href="mailto:info@joelbalmermusic.co.uk">email me</a> for more information about my rates.</p>
+                   
+                <p></p> 
+
+                <p>
+                    
+                </p>
+                
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; <a id="contactLink" href="http://www.joelbalmermusic.co.uk/contact/card/joelbalmermusic.vcf">Joel Balmer Music</a> 2015</p>
+            <p>Photography &copy; Bright White Film 2015</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    
+    <!-- OPTIMIZELY TEST -->
+    <script type="text/javascript">
+        function optimizelyGoal (customEvent, revenueValue){
+          console.log('Sending goal');
+          var iframe = document.createElement('iframe');
+          iframe.style.display = "none";
+          var revenueValueDefault = revenueValue || '0';
+          iframe.src = 'optimizelygoal://goal.com?name=' + customEvent + '&revenue=' + revenueValueDefault;
+          document.body.appendChild(iframe);
+        }
+
+        /* 
+        USAGE: 
+        - revenue value is optional
+        - however, you always
+        need to supply a custom
+        event name, even if you
+        only want to send a revenue
+        value, like so:
+        */
+        optimizelyGoal('transactions', '900');
+    </script>
+
+    <!--
+    soundcloud-footer 
+    -->
+    
+
+    <div class="navbar navbar-fixed-bottom" style="background-color: black; width: 100%">
+        <div class="container" style="height: inherit; top: 50%">
+
+            <!--
+            <a id="brand" class="navbar-brand page-scroll" href="http://www.joelbalmermusic.co.uk/">JOEL BALMER MUSIC</a>
+            -->
+
+            <!-- Trigger the modal with a button -->
+            
+            <!--
+            <a id="showreelButton" class="navbar-brand page-scroll" data-toggle="modal" data-target="#showreelModal">SHOWREEL</a>
+            -->
+            
+            <button id="btn-showreel" type="button" class="btn btn-default btn-lg btn-sm" data-toggle="modal" data-target="#showreelModal" onclick="btn_sm_pressed_showreel();">SHOWREEL</button>
+            
+            <button id="btn-soundcloud" type="button" class="btn btn-default btn-lg btn-sm pull-right" data-toggle="modal" data-target="#soundcloudModal" onclick="btn_sm_pressed_soundcloud();">
+                <i class="demo-icon icon-soundcloud soundcloud-player-icon">
+                    &#xe806;
+                </i> 
+                PLAYER
+            </button>
+
+           <!--
+           <iframe width="100%" height="120" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/12499049&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+
+
+
+            -->
+
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
