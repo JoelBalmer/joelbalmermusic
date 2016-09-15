@@ -36,6 +36,17 @@
 }
 
 
+@font-face {
+      font-family: 'logo_icons';
+      src: url('./fontello_channel_logos/font/logo_icons.eot?23408961');
+      src: url('./fontello_channel_logos/font/logo_icons.eot?23408961#iefix') format('embedded-opentype'),
+           url('./fontello_channel_logos/font/logo_icons.woff?23408961') format('woff'),
+           url('./fontello_channel_logos/font/logo_icons.ttf?23408961') format('truetype'),
+           url('./fontello_channel_logos/font/logo_icons.svg?23408961#logo_icons') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
      
 .logo-icon
 {
@@ -114,6 +125,47 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+
+.channel-logo-icons {
+  font-family: "logo_icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  font-size: 50px;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 10px 5px 10px 5px;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 
 /*
 @media(min-width:768px)
