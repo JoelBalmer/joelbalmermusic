@@ -870,6 +870,18 @@ body {
 
 /* THUMBNAIL GALLERLY STyLING*/
 
+.thumbnail {
+    display: inline-block;
+}
+
+.channel-logos > i {
+    font-size: 70px;
+    width: auto;
+}
+
+.channel-logos > i:hover {
+    color: #ffffff;
+}
 
 
 /*FAVICON CODE
