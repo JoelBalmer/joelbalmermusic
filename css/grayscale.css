@@ -935,6 +935,12 @@ body {
     color: #ffffff;
 }
 
+@media(max-width:500px) {
+    #sky_sports {
+      display: none;
+    }    
+}
+
 
 /*FAVICON CODE
 <!--
