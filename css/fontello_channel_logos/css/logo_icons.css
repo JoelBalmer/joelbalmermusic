@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'logo_icons';
-  src: url('../font/logo_icons.eot?89987625');
-  src: url('../font/logo_icons.eot?89987625#iefix') format('embedded-opentype'),
-       url('../font/logo_icons.woff2?89987625') format('woff2'),
-       url('../font/logo_icons.woff?89987625') format('woff'),
-       url('../font/logo_icons.ttf?89987625') format('truetype'),
-       url('../font/logo_icons.svg?89987625#logo_icons') format('svg');
+  src: url('../font/logo_icons.eot?72424259');
+  src: url('../font/logo_icons.eot?72424259#iefix') format('embedded-opentype'),
+       url('../font/logo_icons.woff2?72424259') format('woff2'),
+       url('../font/logo_icons.woff?72424259') format('woff'),
+       url('../font/logo_icons.ttf?72424259') format('truetype'),
+       url('../font/logo_icons.svg?72424259#logo_icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'logo_icons';
-    src: url('../font/logo_icons.svg?89987625#logo_icons') format('svg');
+    src: url('../font/logo_icons.svg?72424259#logo_icons') format('svg');
   }
 }
 */
@@ -71,3 +71,4 @@
 .icon-sky_sports:before { content: '\e80d'; } /* '' */
 .icon-mtv_logo_black:before { content: '\e80e'; } /* '' */
 .icon-sky_living:before { content: '\e80f'; } /* '' */
+.icon-eurosport:before { content: '\e810'; } /* '' */
