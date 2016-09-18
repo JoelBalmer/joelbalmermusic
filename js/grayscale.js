@@ -26,12 +26,10 @@ $(document).ready(function(){
     //TRYING GALLERY ANIMATION
     $('.img-responsive').hover(
         function(){
-            console.log('coming in');
             $(this).fadeTo( "medium" , 0.4, function() {
                 //animation complete;
             });
         },function(){
-            console.log('going out');
             $(this).fadeTo( "medium" , 1.0, function() {
                 //animation complete;
             });
