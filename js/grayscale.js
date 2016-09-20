@@ -22,19 +22,35 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-    
+
     //TRYING GALLERY ANIMATION
-    $('.img-responsive').hover(
+    $('.thumbnail').hover(
         function(){
-            $(this).fadeTo( "medium" , 0.4, function() {
+             $(this).find("img").fadeTo( "medium" , 0.4, function() {
                 //animation complete;
             });
         },function(){
-            $(this).fadeTo( "medium" , 1.0, function() {
+             $(this).find("img").fadeTo( "medium" , 1.0, function() {
                 //animation complete;
             });
         }
     );
+
+    //MAKE SURE NAV BAR IS SHOWN (OR NOT) ON REFRESH
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+
+        //TO FIX STYLING ISSUE FOR NAV BAR
+        /*
+        if ($(window).width() > 768) {
+            $('#page-top > nav > div > div.navbar-collapse.navbar-right.navbar-main-collapse.collapse > ul > li:nth-child(2)').removeClass("active");
+        }
+        */
+
+    } 
+    else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
 
     //HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
     $('#showreelModal').on('shown.bs.modal', function() {
