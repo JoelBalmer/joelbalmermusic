@@ -634,28 +634,6 @@ footer p {
     }
 }
 
-.intro .intro-body .brand-heading {
-    /* color: #000000; */
-    font-size: 28px;
-    padding-bottom: 0px;
-    margin: 0 0 10px;
-}
-
-@media(max-width:450px) {
-    .intro .intro-body .brand-heading {
-        font-size: 23px;
-        padding-bottom: 0px;
-        margin: 0 0 10px;
-    }
-
-    .main_video {
-        width: 85%;
-        height: 100%;
-    }
-
-    
-}
-
 
 @media(min-width:767px) {
     .content-section {
@@ -673,7 +651,37 @@ footer p {
     }
 }
 
+/* INTRO BRAND HEADING 
+
+.intro .intro-body
+*/
+
+
+ .brand-heading {
+    /* color: #000000; */
+    font-size: 60px;
+    
+    margin: 0px 0px 23px 0px;
+}
+
+@media(max-width:450px) {
+    .brand-heading {
+        font-size: 50px;
+    }
+
+    .main_video {
+        width: 85%;
+        height: 100%;
+    }
+
+    
+}
+
 @media(min-width:768px) {
+    .brand-heading {
+        font-size: 70px;
+    }
+
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -710,14 +718,6 @@ footer p {
         padding: 0;
     }
 
-    .intro .intro-body .brand-heading {
-        font-size: 70px;
-        color: #ffffff;
-        padding-bottom: 0px;
-        padding-top: 80px;        
-        margin: 0 0 10px;
-    }
-
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
@@ -727,6 +727,8 @@ footer p {
         height: 281px;
     }
 }
+
+/* INTRO BRAND HEADING -- END*/
 
 ::-moz-selection {
     text-shadow: none;
