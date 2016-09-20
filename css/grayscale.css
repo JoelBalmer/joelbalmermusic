@@ -182,7 +182,7 @@
 
 @media(max-width:768px) {
     .navbar-brand {
-        padding: 15px 5px;
+        padding: 17px 5px;
     }
 }
 
@@ -948,10 +948,19 @@ body {
   font-size: 14px;
 }
 
+#logo {
+  float:left;
+  padding: 3px 25px 0px 10px;"
+}
 
-@media(max-width:768px) {
+@media(max-width:767px) {
   .gallery-heading {
     font-size: 12px;
+  }
+
+  /*logo*/
+  #logo {
+    padding: 3px 10px 0px 10px;
   }
 }
 
@@ -961,7 +970,17 @@ body {
   }   
 }
 
-/*FAVICON CODE
-<!--
-    <link rel='shortcut icon' type='image/x-icon' href='img/new_favicon.ico' />
-    -->*/
+.no-svg .svg_logo {
+  /*background-image: url(./img/logo_small.png);*/
+}
+
+.navbar-nav a, .navbar-header > span {
+    font-size: 17px;
+  }
+
+@media(max-width:992px) {
+  .navbar-nav a, .navbar-header > span {
+    font-size: 13px;
+  }
+}
+
