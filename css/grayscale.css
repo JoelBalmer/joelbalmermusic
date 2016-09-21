@@ -948,10 +948,27 @@ body {
   font-size: 14px;
 }
 
-#logo {
+a#logo {
   float:left;
-  padding: 3px 25px 0px 10px;"
+  padding: 3px 25px 0px 10px;
+  position: relative;
+  display: inline-block;
 }
+
+a#logo:after {
+  content: ""; 
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+
+/*
+object {
+  width:100%;
+}
+*/
 
 @media(max-width:767px) {
   .gallery-heading {
@@ -983,4 +1000,3 @@ body {
     font-size: 13px;
   }
 }
-
