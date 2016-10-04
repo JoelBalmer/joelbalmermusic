@@ -52,11 +52,6 @@ $(document).ready(function(){
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 
-    //HIGHLIGHT SHOWREEL BUTTON PRESSED STYLING
-    $('#showreelModal').on('shown.bs.modal', function() {
-        $('#showreelButton').addClass('buttonPushed');
-        
-    });
 
     // $('.modal-content').on('shown', function() {
     //     console.log('button pressed2 !');
@@ -72,12 +67,6 @@ $(document).ready(function(){
             }
         }, 50);
     }
-
-    //INITIAL CAROUSEL SETUP
-    $('#achievementsCarousel').carousel({
-        interval: 4500,
-        pause: "hover"
-    });
     
 
     $('#showreelModal').on('hidden.bs.modal', function () {
@@ -111,10 +100,7 @@ $(document).ready(function(){
 });
 
 
-//FUNCTION FOR SHOWREEL PRESSED
-function btn_sm_pressed_showreel() {
-    $('#btn-showreel').toggleClass('btn-sm-pressed');
-}
+//FUNCTION FOR SOUNDCLOUD PRESSED
 
 function btn_sm_pressed_soundcloud() {
     $('#btn-soundcloud').toggleClass('btn-sm-pressed');
@@ -122,7 +108,6 @@ function btn_sm_pressed_soundcloud() {
 
 //MODAL CLOSE BUTTON
 function closedButtonPressed() {
-    $('#btn-showreel').removeClass('btn-sm-pressed');
     $('#btn-soundcloud').removeClass('btn-sm-pressed');
 }
 
@@ -215,9 +200,9 @@ $(function() {
         player.addEvent('finish', onFinish);
         player.addEvent('playProgress', onPlayProgress);
 
-        //SHOW SHOWREEL after severl seconds
-        //$('#showreelModal').modal('show');
-        $('#btn-showreel').click();
+        $('body').fadeIn("40000", function(){
+            //PAGE READY TO LOAD
+        });
     });
 
     // Call the API when a button is pressed
