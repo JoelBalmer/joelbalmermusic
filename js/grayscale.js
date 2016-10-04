@@ -200,9 +200,6 @@ $(function() {
         player.addEvent('finish', onFinish);
         player.addEvent('playProgress', onPlayProgress);
 
-        $('body').fadeIn("40000", function(){
-            //PAGE READY TO LOAD
-        });
     });
 
     // Call the API when a button is pressed
