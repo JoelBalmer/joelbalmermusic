@@ -996,3 +996,14 @@ object {
   /*background-image: url(./img/logo_small.png);*/
 }
 
+.above-showreel-img {
+  margin: auto;
+  max-width: 70%;
+}
+
+@media(min-width:450px) {
+  .above-showreel-img {
+    max-width: 55%;
+  }   
+}
+
