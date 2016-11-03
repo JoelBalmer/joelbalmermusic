@@ -685,6 +685,7 @@ footer p {
 @media(min-width:768px) {
     .brand-heading {
         font-size: 70px;
+        margin: 0px 0px 55px 0px;
     }
 
     .navbar-custom {
