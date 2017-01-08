@@ -398,7 +398,8 @@ a:hover {
     text-align: center;
     color: #fff;
     /* background: url(../img/divider.jpg) no-repeat top center scroll; */
-    background: url(../img/background_smile.jpg) no-repeat center left scroll;
+    background: url(../img/Coastline-small.JPG) no-repeat center left scroll;
+    
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -526,7 +527,7 @@ a:hover {
     height: 400px;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/smile.jpg) no-repeat center center scroll;
+    background: url(../img/Silhouette-small.JPG) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
