@@ -6,6 +6,25 @@
     <script src="js/jquery.js"></script>
     <!-- jQuery end -->
 
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script type="text/javascript">
+        socket = io.connect('http://localhost:3000');
+        socket.on('testData', receivedMessage);
+
+        function receivedMessage(data) {
+            console.log('received!');
+        }
+
+        console.log('sending a message!');
+        var data = {
+            x: "hello",
+            y: "goodbye"
+        }
+        socket.emit('testData', data);
+    </script>
+
+
     <!-- Optimizely -->
     <!-- joel.balmer account is 867842035 -->
     <script src="//cdn.optimizely.com/js/3733390337.js"></script>
