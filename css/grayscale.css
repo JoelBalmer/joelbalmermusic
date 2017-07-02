@@ -1048,10 +1048,6 @@ object {
   border: 1px solid rgba(255,255,255,.3);
 }
 
-#work-list-item:hover .work-dropdown-content {
-  display: block;
-}
-
 #work-list-item {
   position: relative;
 }

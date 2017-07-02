@@ -233,10 +233,20 @@ $(function() {
 });
 //VIMEO API END
 
-
 // jQuery for page scrolling feature - requires jQuery Easing plugin
+var workMenuIsVisible = false;
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        if (this.getAttribute('id') === "work-menu-item" && !workMenuIsVisible) {
+            $('.work-dropdown-content').css('display','block');
+            workMenuIsVisible = !workMenuIsVisible;
+        }
+        else {
+            $('.work-dropdown-content').css('display','none');
+            workMenuIsVisible = false;
+        }
+
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -248,5 +258,7 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul.nav li a').click(function() {
-    $('.navbar-toggle:visible').click();
+    if (this.getAttribute('id') !== "work-menu-item") {   
+        $('.navbar-toggle:visible').click();
+    }
 });
