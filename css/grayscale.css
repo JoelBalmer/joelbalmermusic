@@ -959,6 +959,10 @@ body {
     display: inline-block;
 }
 
+.thumbnail:hover {
+    border: none;
+}
+
 .channel-logos > i {
     font-size: 65px;
     width: auto;
