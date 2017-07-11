@@ -956,7 +956,7 @@ body {
 /* THUMBNAIL GALLERLY STyLING*/
 
 
-.thumbnail > img, a.thumbnail > img {
+.thumbnail, a.thumbnail {
     display: inline-block;
 }
 
