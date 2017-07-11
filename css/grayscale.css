@@ -955,12 +955,13 @@ body {
 
 /* THUMBNAIL GALLERLY STyLING*/
 
-.thumbnail {
+
+.thumbnail > img, a.thumbnail > img {
     display: inline-block;
 }
 
-.thumbnail:hover {
-    border: none;
+.thumbnail:hover, a.thumbnail:hover {
+    border: 1px solid #2AA7A7;
 }
 
 .channel-logos > i {

@@ -23,6 +23,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
 
+
     //TRYING GALLERY ANIMATION
     $('.thumbnail').hover(
         function(){
@@ -35,6 +36,7 @@ $(document).ready(function(){
             });
         }
     );
+
 
     //MAKE SURE NAV BAR IS SHOWN (OR NOT) ON REFRESH
     if ($(".navbar").offset().top > 50) {
