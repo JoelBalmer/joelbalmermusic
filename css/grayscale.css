@@ -1087,7 +1087,8 @@ object {
 
 @media(max-width:500px) {
   #showreel-tabs {
-    font-size: 10px;
+    font-size: 8px;
+    font-weight: bold;
   }   
 }
 
