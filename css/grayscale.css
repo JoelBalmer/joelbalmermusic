@@ -1084,6 +1084,13 @@ object {
   color: black;
 }
 
+
+@media(max-width:500px) {
+  #showreel-tabs {
+    font-size: 10px;
+  }   
+}
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
