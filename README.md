@@ -1,4 +1,4 @@
-# joelbalmermusic
+# Joel Balmer Music
 Welcome to my website!
 
 [http://www.joelbalmermusic.co.uk/](http://www.joelbalmermusic.co.uk/)
